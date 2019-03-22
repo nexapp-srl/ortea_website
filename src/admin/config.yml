@@ -16,3 +16,5 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
 media_folder: "src/images/uploads"
+
+public_folder: "images/uploads"
