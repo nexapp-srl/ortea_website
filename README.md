@@ -8,7 +8,7 @@ Url: [https://gracious-engelbart-660170.netlify.com](https://gracious-engelbart-
 
 #### Install pi-gen
 ```shell
-yarn global add pi-gen@1.0.17
+yarn global add pi-gen@1.0.19
 ```
 #### Run
 ```shell
