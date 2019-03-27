@@ -1,85 +1,111 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="theme.css" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="theme.css" type="text/css">
-</head>
+  <body>
+    <div ht-include="'src/header.html'"></div>
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar7">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar7"> <a class="navbar-brand text-primary d-none d-md-block" href="#">
-          <i class="fa d-inline fa-lg fa-stop-circle-o"></i>
-          <a href="index.html"><b> BRAND</b></a>
-        </a>
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"> <a class="nav-link" href="#">Features</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Pricing</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="template-blog.html">Blog</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item"> <a class="nav-link" href="#">
-              <i class="fa fa-twitter fa-fw"></i>
-            </a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">
-              <i class="fa fa-facebook fa-fw"></i>
-            </a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">
-              <i class="fa fa-slack fa-fw"></i>
-            </a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="py-5 text-center text-white" style="position: relative; overflow: hidden;"> <video autoplay="" loop="" muted="" plays-inline="" style="position: absolute; right: 0; top: 0; min-width:100%; z-index: -100;">
-      <source src="https://static.pingendo.com/video-placeholder.mp4" type="video/mp4"> </video>
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <h1 class="mb-4 display-3">Video</h1>
-          <p class="lead mb-5">{{ data.index.title }}</p>
-          <a href="#" class="btn btn-lg btn-primary mx-1">Your call to action</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9">
-          <p class="lead">Sign up to our newsletter for the latest news</p>
-          <form class="form-inline">
-            <div class="form-group"> <input type="email" class="form-control" placeholder="Your e-mail here"> </div> <button type="submit" class="btn btn-primary ml-3">Subscribe</button>
-          </form>
-        </div>
-        <div class="col-4 col-md-1 align-self-center"> <a href="#">
-            <i class="fa fa-fw fa-facebook text-muted fa-2x"></i>
-          </a> </div>
-        <div class="col-4 col-md-1 align-self-center"> <a href="#">
-            <i class="fa fa-fw fa-twitter text-muted fa-2x"></i>
-          </a> </div>
-        <div class="col-4 col-md-1 align-self-center"> <a href="#">
-            <i class="fa fa-fw fa-instagram text-muted fa-2x"></i>
-          </a> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mt-3 text-center">
-          <p>© Copyright 2018 Pingendo - All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" style=""></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
-</body>
+    <h1>{{ data.index.title }}</h1>
+    <!-- se uso `data.index.foo.title` non funziona -->
 
+    <h4>{{ data.blog === undefined }}</h4> <!-- true -->
+
+    <ul>
+      <li ht-repeat="el in data.index.items">{{ el }}</li>
+    </ul>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia assumenda
+      deleniti obcaecati et, dolores a mollitia ipsa iure ab nam sequi minus sit
+      nihil id vel porro rerum vero aspernatur! Rerum repudiandae magni ipsam
+      reprehenderit ad. Voluptate nesciunt laudantium eligendi blanditiis
+      laborum veritatis alias similique minus iusto mollitia qui, quas eum
+      ipsam, repellendus fugiat molestiae quo dignissimos doloribus. Dicta
+      quasi, qui distinctio nobis ad provident nostrum repellendus consectetur
+      corrupti vitae, quidem obcaecati. Error, fuga optio quam perspiciatis
+      dolores dignissimos porro mollitia temporibus voluptatum ducimus est
+      reiciendis possimus natus id iusto pariatur! Commodi magni vitae voluptas
+      quo officiis minima, voluptatibus non error! Eum saepe fugiat, mollitia
+      quo quidem at id est quisquam excepturi, sed eaque praesentium error sint
+      corrupti voluptates! Officiis cum eos, placeat quidem quam neque nemo
+      nostrum? Ipsa error consequatur magni corrupti, libero saepe velit impedit
+      officiis dicta dolorem voluptates quidem minus officia pariatur, nostrum
+      esse in quia veniam? Placeat quo quas, consequuntur cupiditate quod
+      quaerat maiores neque ea voluptate nesciunt voluptates porro fugit
+      pariatur vel temporibus, qui in aliquam officiis ullam eum? Voluptatem
+      dolore dolores tenetur, maxime ratione dolorem nihil maiores deserunt
+      quibusdam accusamus dolorum vero illum voluptate a amet, magnam deleniti
+      labore quos dignissimos iste ullam ad aliquam? Sed velit deleniti
+      inventore labore corrupti eius dignissimos provident? Magni illo
+      exercitationem ratione quod voluptatum? Quibusdam, veniam. Ab, omnis? Quam
+      deleniti, maxime ab laboriosam culpa odit ipsum magni, nobis in explicabo,
+      voluptatum beatae! Praesentium ex culpa laboriosam fugiat doloremque illo,
+      eos cumque blanditiis minima ducimus maxime voluptatum expedita officia
+      cupiditate quod perferendis suscipit ipsam vel optio, veniam laudantium
+      temporibus. Natus ea, saepe obcaecati, sapiente quisquam sunt ipsum quidem
+      omnis at laboriosam porro neque itaque debitis quas aut molestias ratione
+      officia! Tempora, quisquam quaerat! Nesciunt, magni libero sint reiciendis
+      rem quidem dolorem similique ratione dolor suscipit harum quasi
+      necessitatibus dolore aliquid minima vitae eius a quisquam, porro vel
+      possimus. Recusandae, rerum temporibus? Impedit, illum odio in reiciendis
+      aspernatur eius aliquam! Mollitia molestiae vel voluptates porro autem
+      perferendis qui! Consequatur unde blanditiis dignissimos, ducimus, impedit
+      natus veniam autem cupiditate, deleniti saepe in neque! Vel laudantium a
+      aut obcaecati voluptates itaque at in quam, dolore cupiditate fuga
+      pariatur porro voluptatem nostrum, doloribus ad, laborum ab. Cum omnis
+      maxime quae molestias facere earum asperiores voluptatem placeat
+      repudiandae. Animi optio dolor cum quidem libero esse repudiandae impedit
+      iste hic ea earum quaerat vero vel, ab tempore porro eveniet minima eaque
+      temporibus aspernatur fugit! Pariatur dignissimos dicta minus dolore
+      corporis, distinctio delectus nostrum aut quos quia id laboriosam
+      exercitationem iste laudantium iure maxime mollitia, maiores quis commodi
+      non porro voluptatibus et rerum! Facere aspernatur eveniet, dolore
+      dignissimos earum obcaecati adipisci non soluta vero ut praesentium
+      impedit fuga excepturi reiciendis cum deserunt incidunt ullam aut, et ex
+      saepe voluptates modi ipsam dolorum? Vero, consequatur excepturi incidunt
+      laudantium ratione repudiandae nostrum ipsa officia laborum explicabo
+      facilis voluptas autem ducimus placeat tenetur officiis. Facere iusto
+      maxime earum, eum amet aliquid soluta sed eos. Rerum modi, quam sequi
+      libero et totam fugiat repudiandae quae nisi, veritatis numquam neque
+      sint?
+    </p>
+
+    <div ht-include="'src/footer.html'"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+      style=""
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <pingendo
+      onclick="window.open('https://pingendo.com/', '_blank')"
+      style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white"
+      >Made with Pingendo Free&nbsp;&nbsp;<img
+        src="https://pingendo.com/site-assets/Pingendo_logo_big.png"
+        class="d-block"
+        alt="Pingendo logo"
+        height="16"
+    /></pingendo>
+  </body>
 </html>
