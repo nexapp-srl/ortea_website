@@ -43,11 +43,29 @@ collections:
         fields:
           <<: *language_strings
 
-  - label: 'languages'
-    name: 'languages'
-    file: 'data/languages.json'
-    fields:
-      <<: *language_strings
+  - label: 'testlang'
+    name: 'testlang'
+    files:
+      - label: "Profile"
+        name: "profile"
+        file: 'data/langages.json'
+        widget: "object"
+        fields:
+          - {label: "Public", name: "public", widget: "boolean", default: true}
+          - {label: "Name", name: "name", widget: "string"}
+          - label: "Birthdate"
+            name: "birthdate"
+            widget: "date"
+            default: ""
+            format: "MM/DD/YYYY"
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            fields: 
+              - {label: "Street Address", name: "street", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "Postal Code", name: "post-code", widget: "string"}
+
 
           
 
