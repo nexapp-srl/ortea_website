@@ -17,6 +17,12 @@ collections:
   - name: 'languages'
     label: 'Languages'
     file: 'data/languages.json'
+    fields:
+      - label: Italian
+        name: it
+        widget: list
+        fields:
+          - { name: index_1_title_1_1, widget: string }
 
 media_folder: 'src/images/uploads'
 
