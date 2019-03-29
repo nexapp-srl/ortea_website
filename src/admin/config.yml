@@ -6,9 +6,9 @@ collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog' # Used in the UI
     files:
-      - label: 'Posts'
-        name: 'it'
-        file: 'data/blog.json'
+      - label: 'English posts'
+        name: 'en-posts'
+        file: 'data/blog_en.json'
         fields:
           - label: Posts
             name: posts
@@ -16,11 +16,51 @@ collections:
             fields:
               - { label: Date, name: date, widget: date }
               - { label: Title, name: title, widget: string }
+              - { label: Slug, name: slug, widget: string, pattern: ['^\S*$', 'Must not contains spaces'] }
+              - { label: Thumbnail, name: thumbnail, widget: image }
+              - { label: Body, name: body, widget: markdown }
+            
+      - label: 'French posts'
+        name: 'fr-posts'
+        file: 'data/blog_fr.json'
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            fields:
+              - { label: Date, name: date, widget: date }
+              - { label: Title, name: title, widget: string }
+              - { label: Slug, name: slug, widget: string, pattern: ['^\S*$', 'Must not contains spaces'] }
               - { label: Thumbnail, name: thumbnail, widget: image }
               - { label: Body, name: body, widget: markdown }
 
+      - label: 'Italian posts'
+        name: 'it-posts'
+        file: 'data/blog_it.json'
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            fields:
+              - { label: Date, name: date, widget: date }
+              - { label: Title, name: title, widget: string }
+              - { label: Slug, name: slug, widget: string, pattern: ['^\S*$', 'Must not contains spaces'] }
+              - { label: Thumbnail, name: thumbnail, widget: image }
+              - { label: Body, name: body, widget: markdown }
 
-
+      - label: 'Spanish posts'
+        name: 'es-posts'
+        file: 'data/blog_es.json'
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            fields:
+              - { label: Date, name: date, widget: date }
+              - { label: Title, name: title, widget: string }
+              - { label: Slug, name: slug, widget: string, pattern: ['^\S*$', 'Must not contains spaces'] }
+              - { label: Thumbnail, name: thumbnail, widget: image }
+              - { label: Body, name: body, widget: markdown }
 
   - name: 'languages'
     label: 'Languages'

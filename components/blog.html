@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="p-4 col-lg-4 col-md-6" ht-repeat="post in data.blog.posts">
+      <div class="p-4 col-lg-4 col-md-6" ht-repeat="post in data.blog_it.posts">
         <img class="img-fluid d-block" src="{{ post.thumbnail }}" />
         <h2 class="mt-3">{{ post.title }}</h2>
         <span
@@ -21,7 +21,7 @@
           {{ post.body | limitTo: 200 }}
           <span ng-if="post.body.length > 200">...</span>
         </p>
-        <a class="btn btn-link btn-sm p-0" href="blog-post.html">Read more</a>
+        <a class="btn btn-link btn-sm p-0" href="post-{{ post.slug }}.html">Read more</a>
       </div>
     </div>
   </div>
@@ -32,7 +32,7 @@
       <div class="col-lg-4 p-3 col-md-6">
         <a href="index-en.html"
           ><img
-            src="assets/logo_ortea_next_bianco.png"
+            src="/assets/logo_ortea_next_bianco.png"
             class="img-fluid"
             style="height:40px;"
         /></a>
@@ -42,7 +42,7 @@
           <li class="mb-3">
             <a href="https://www.ortea.it/en/"
               ><img
-                src="assets/logo_ortea_bianco.png"
+                src="/assets/logo_ortea_bianco.png"
                 class="img-fluid"
                 style="height:30px;"
             /></a>
@@ -50,7 +50,7 @@
           <li class="mb-3">
             <a href="https://www.icar.com/en/"
               ><img
-                src="assets/logo_icar_bianco.png"
+                src="/assets/logo_icar_bianco.png"
                 class="img-fluid"
                 style="height:30px;"
             /></a>
@@ -58,7 +58,7 @@
           <li>
             <a href="https://www.enersolve.it/en/"
               ><img
-                src="assets/logo_enersolve_bianco.png"
+                src="/assets/logo_enersolve_bianco.png"
                 class="img-fluid"
                 style="height:30px;"
             /></a>
