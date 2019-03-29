@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+fields: &language_fields
+  - { name: index_1_title_1_1, widget: string }
+  - { name: index_1_title_1_2, widget: string }
+
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog' # Used in the UI
@@ -15,19 +19,14 @@ collections:
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - label: 'Languages'
-    name: 'languages'
-    files:
-      - label: 'lang'
-        name: 'lang'
-        file: 'data/languages.json'
-        fields:
-          - label: Italian
-            name: it
-            widget: list
-            fields:
-              - { name: index_1_title_1_1, widget: string }
-              - { name: index_1_title_1_2, widget: string }
+  # - label: 'Languages'
+  #   name: 'languages'
+  #   files:
+  #     - label: 'Italian'
+  #       name: 'it'
+  #       file: 'data/it.json'
+  #       <<: *language_fields
+
 
 media_folder: 'src/images/uploads'
 
