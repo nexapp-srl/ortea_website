@@ -43,15 +43,12 @@ collections:
         fields:
           <<: *language_strings
 
-  - label: "testlang"
-    name: "testlang"
-    widget: "object"
+  - label: 'languages'
+    name: 'languages'
+    file: 'data/languages.json'
     fields:
-      - label: "it"
-        name: "it"
-        widget: "object"
-        fields:
-          <<: *language_strings
+      <<: *language_strings
+
           
 
 media_folder: 'src/images/uploads'
