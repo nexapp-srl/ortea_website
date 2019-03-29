@@ -6,9 +6,9 @@ collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog' # Used in the UI
     files:
-      - label: 'Italian'
+      - label: 'Posts'
         name: 'it'
-        file: 'data/strings_it.json'
+        file: 'data/blog.json'
         fields:
           - label: Posts
             name: posts
