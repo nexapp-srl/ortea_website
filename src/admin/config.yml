@@ -14,9 +14,13 @@ collections:
             name: posts
             widget: list
             fields:
+              - { label: Date, name: date, widget: date }
               - { label: Title, name: title, widget: string }
               - { label: Thumbnail, name: thumbnail, widget: image }
               - { label: Body, name: body, widget: markdown }
+
+
+
 
   - name: 'languages'
     label: 'Languages'

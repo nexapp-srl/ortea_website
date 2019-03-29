@@ -2,7 +2,7 @@
   class="navbar navbar-expand-md fixed-top shadow bg-white navbar-light d-none d-lg-block"
 >
   <div class="container">
-    <a class="navbar-brand" href="index-en.html">
+    <a class="navbar-brand" href="index.html">
       <img
         src="/assets/logo_ortea_next_color.png"
         class="img-fluid"
@@ -78,18 +78,28 @@
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
-            >ITA</a
+            >{{ lang|uppercase }}</a
           >
           <div class="dropdown-menu" aria-labelledby="navbarDropdownLangLink">
             <a
               class="dropdown-item d-flex align-items-center"
-              href="index-it.html"
-              >ITA</a
+              href="/en/index.html"
+              >EN</a
             >
             <a
               class="dropdown-item d-flex align-items-center"
-              href="index-en.html"
-              >ENG</a
+              href="/it/index.html"
+              >ES</a
+            >
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="/fr/index.html"
+              >FR</a
+            >
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="/it/index.html"
+              >IT</a
             >
           </div>
         </li>
