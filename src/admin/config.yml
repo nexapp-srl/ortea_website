@@ -14,15 +14,20 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'languages'
-    label: 'Languages'
-    file: 'data/languages.json'
-    fields:
-      - label: Italian
-        name: it
-        widget: list
+
+  - label: 'Languages'
+    name: 'languages'
+    files:
+      - label: 'lang'
+        name: 'lang'
+        file: 'data/languages.json'
         fields:
-          - { name: index_1_title_1_1, widget: string }
+          - label: Italian
+            name: it
+            widget: list
+            fields:
+              - { name: index_1_title_1_1, widget: string }
+              - { name: index_1_title_1_2, widget: string }
 
 media_folder: 'src/images/uploads'
 
