@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-fields: &language_strings
+strings_names: &language_strings
   - { name: index_1_title_1_1, widget: string }
   - { name: index_1_title_1_2, widget: string }
 
