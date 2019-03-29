@@ -5088,10 +5088,10 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-pi-gen@1.0.23:
-  version "1.0.23"
-  resolved "https://registry.yarnpkg.com/pi-gen/-/pi-gen-1.0.23.tgz#26447fe86d87f1e9d277403094aa99a9761917d5"
-  integrity sha512-AKnaHz0m3e4YDc2YaXiZL6rNAVwixsvGIZYlGpxm/LPd1BLG2Y8szV/Iz5S4/S6I8RBd9YWu4gatDF3sx8cB1w==
+pi-gen@1.0.24:
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/pi-gen/-/pi-gen-1.0.24.tgz#2383ef39333910ed983783d3f244120366df4b47"
+  integrity sha512-vJmaY9I+SsTjBA0OsYKP1l8Mh/OyLfq9Gx/NsQHZ5PKgA2sN22zl/KkdlV0ovCyjfNnVeo3ozax8ND+DN4vfJw==
   dependencies:
     "@oclif/command" "^1"
     "@oclif/config" "^1"
