@@ -39,14 +39,14 @@
 </div>
 <div class="py-5 text-center">
   <div class="container">
-    <div class="row">
+    <div class="row" ht-repeat="message in data['banner_' + lang].messages">
       <div
         class="p-3 d-md-flex align-items-center col-md-12 bg-light justify-content-around"
       >
         <p class="lead my-2">
-          Join us at Middle East Elecricity 2019, 5-7 March, Dubai
+          {{ message.title }}
         </p>
-        <a class="btn btn-primary btn-lg" href="#">Learn more</a>
+        <a class="btn btn-primary btn-lg" ht-if="message.link" href="{{ message.link }}">Learn more</a>
       </div>
     </div>
   </div>

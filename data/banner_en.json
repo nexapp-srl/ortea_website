@@ -1,8 +1,11 @@
 {
   "messages": [
     {
-      "title": "My new super post",
+      "title": "My super event",
       "link": "https://www.example.com"
+    },
+    {
+      "title": "Nothing to see here"
     }
   ]
 }
