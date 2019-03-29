@@ -16,10 +16,15 @@ collections:
             fields:
               - { label: Date, name: date, widget: date }
               - { label: Title, name: title, widget: string }
-              - { label: Slug, name: slug, widget: string, pattern: ['^\S*$', 'Must not contains spaces'] }
+              - {
+                  label: Slug,
+                  name: slug,
+                  widget: string,
+                  pattern: ['^\S*$', 'Must not contains spaces'],
+                }
               - { label: Thumbnail, name: thumbnail, widget: image }
               - { label: Body, name: body, widget: markdown }
-            
+
       - label: 'French posts'
         name: 'fr-posts'
         file: 'data/blog_fr.json'
@@ -30,7 +35,12 @@ collections:
             fields:
               - { label: Date, name: date, widget: date }
               - { label: Title, name: title, widget: string }
-              - { label: Slug, name: slug, widget: string, pattern: ['^\S*$', 'Must not contains spaces'] }
+              - {
+                  label: Slug,
+                  name: slug,
+                  widget: string,
+                  pattern: ['^\S*$', 'Must not contains spaces'],
+                }
               - { label: Thumbnail, name: thumbnail, widget: image }
               - { label: Body, name: body, widget: markdown }
 
@@ -44,7 +54,12 @@ collections:
             fields:
               - { label: Date, name: date, widget: date }
               - { label: Title, name: title, widget: string }
-              - { label: Slug, name: slug, widget: string, pattern: ['^\S*$', 'Must not contains spaces'] }
+              - {
+                  label: Slug,
+                  name: slug,
+                  widget: string,
+                  pattern: ['^\S*$', 'Must not contains spaces'],
+                }
               - { label: Thumbnail, name: thumbnail, widget: image }
               - { label: Body, name: body, widget: markdown }
 
@@ -58,7 +73,12 @@ collections:
             fields:
               - { label: Date, name: date, widget: date }
               - { label: Title, name: title, widget: string }
-              - { label: Slug, name: slug, widget: string, pattern: ['^\S*$', 'Must not contains spaces'] }
+              - {
+                  label: Slug,
+                  name: slug,
+                  widget: string,
+                  pattern: ['^\S*$', 'Must not contains spaces'],
+                }
               - { label: Thumbnail, name: thumbnail, widget: image }
               - { label: Body, name: body, widget: markdown }
 
@@ -89,6 +109,50 @@ collections:
         fields:
           - { name: index_1_title_1_1, widget: string }
           - { name: index_1_title_1_2, widget: string }
+
+  - name: 'banner'
+    label: 'Banner'
+    files:
+      - label: 'Italian messages'
+        name: 'it'
+        file: 'data/banner_it.json'
+        fields:
+          - label: Messages
+            name: messages
+            widget: list
+            fields:
+              - { name: title, widget: string }
+              - { name: link, widget: string }
+      - label: 'English messages'
+        name: 'en'
+        file: 'data/banner_en.json'
+        fields:
+          - label: Messages
+            name: messages
+            widget: list
+            fields:
+              - { name: title, widget: string }
+              - { name: link, widget: string }
+      - label: 'French messages'
+        name: 'fr'
+        file: 'data/banner_fr.json'
+        fields:
+          - label: Messages
+            name: messages
+            widget: list
+            fields:
+              - { name: title, widget: string }
+              - { name: link, widget: string }
+      - label: 'Spanish messages'
+        name: 'es'
+        file: 'data/banner_es.json'
+        fields:
+          - label: Messages
+            name: messages
+            widget: list
+            fields:
+              - { name: title, widget: string }
+              - { name: link, widget: string }
 
 media_folder: 'src/images/uploads'
 
