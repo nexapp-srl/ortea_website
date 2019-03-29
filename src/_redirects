@@ -1,8 +1,11 @@
-/  it/index.html  302  Country=it
-/index.html  it/index.html  302  Country=it
-/ es/index.html  302  Country=es
-/index.html  es/index.html  302  Country=es
-/  fr/index.html  302  Country=it
-/index.html  fr/index.html  302  Country=fr
-/  en/index.html  302  
-/index.html  en/index.html  302 
+/  /it/index.html  302  Country=it
+/index.html  /it/index.html  302  Country=it
+
+/ /es/index.html  302  Country=es
+/index.html  /es/index.html  302  Country=es
+
+/  /fr/index.html  302  Country=it
+/index.html  /fr/index.html  302  Country=fr
+
+/  /en/index.html  302  
+/index.html  /en/index.html  302
