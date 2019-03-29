@@ -19,13 +19,13 @@ collections:
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  # - label: 'Languages'
-  #   name: 'languages'
-  #   files:
-  #     - label: 'Italian'
-  #       name: 'it'
-  #       file: 'data/it.json'
-  #       <<: *language_fields
+  - label: 'Languages'
+    name: 'languages'
+    files:
+      - label: 'Italian'
+        name: 'it'
+        file: 'data/it.json'
+        <<: *language_fields
 
 
 media_folder: 'src/images/uploads'
