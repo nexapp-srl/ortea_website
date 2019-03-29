@@ -1,12 +1,14 @@
 {
   "posts": [
     {
+      "date": "2019-03-29T15:32:01.388Z",
       "title": "My new super post",
       "slug": "first-post",
       "thumbnail": "/images/uploads/logo-ortea-po-colore.svg",
-      "body": "Lorem ipsum yeyeye"
+      "body": "Lorem ipsum yeyeye\n\n\n\n# Title test"
     },
     {
+      "date": "2019-03-29T15:32:01.415Z",
       "title": "My new super post",
       "slug": "second-post",
       "thumbnail": "/images/uploads/logo-ortea-po-colore.svg",
