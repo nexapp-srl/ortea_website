@@ -1,1 +1,58 @@
-@import "src/bootstrap/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto:400,900');
+
+// Options
+// 
+// Quickly modify global styling by enabling or disabling optional features.
+  
+$enable-rounded:            true !default;
+$enable-shadows:            true;
+$enable-transitions:        true;
+$enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+$enable-print-styles:       true;
+
+// Variables
+//
+// Colors
+
+$theme-colors: (
+  primary: #009640,
+  secondary: #004D7E,
+  light: #f3f3f3,
+  dark: #151515,
+  info: #ccc,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+$body-bg: white;
+$body-color: #333;
+
+
+$body-color-inverse: invert($body-color) !default;
+$link-color: #009640;
+
+// Fonts
+$font-family-base: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$headings-font-family: 'Roboto', sans-serif;
+$display-font-family: $font-family-base;
+$font-weight-normal: 400;
+$headings-font-weight: 400;
+$lead-font-size:   1.30rem;
+
+$spacer: 1.5rem;
+$enable-responsive-font-sizes: true;
+$border-radius: 0rem;
+$border-radius-sm: 0rem;
+$border-radius-lg: 0rem;
+
+@import 'bootstrap/bootstrap';
+
+html,body {
+  height:100%;
+}
+
+.cover {
+  min-height:100%;
+}
