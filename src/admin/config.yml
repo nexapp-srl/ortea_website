@@ -9,37 +9,42 @@ fields: &language_strings
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog' # Used in the UI
-    folder: 'data/blog' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    extension: 'json'
-    fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-
-  - label: 'Languages'
-    name: 'languages'
     files:
       - label: 'Italian'
         name: 'it'
-        file: 'data/it.json'
+        file: 'data/strings_it.json'
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Thumbnail, name: thumbnail, widget: image}
+              - {label: Body, name: body, widget: markdown}
+
+
+
+  - name: 'languages'
+    label: 'Languages'    
+    files:
+      - label: 'Italian'
+        name: 'it'
+        file: 'data/strings_it.json'
         fields:
           <<: *language_strings
       - label: 'English'
         name: 'en'
-        file: 'data/en.json'
+        file: 'data/strings_en.json'
         fields:
           <<: *language_strings
       - label: 'French'
         name: 'fr'
-        file: 'data/fr.json'
+        file: 'data/strings_fr.json'
         fields:
           <<: *language_strings
       - label: 'Spanish'
         name: 'es'
-        file: 'data/es.json'
+        file: 'data/strings_es.json'
         fields:
           <<: *language_strings
 
