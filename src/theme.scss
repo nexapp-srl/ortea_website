@@ -46,7 +46,7 @@ $border-radius: 0rem;
 $border-radius-sm: 0rem;
 $border-radius-lg: 0rem;
 
-@import 'bootstrap/bootstrap';
+@import 'bootstrap-4.3.1';
 
 html,body {
   height:100%;
@@ -72,5 +72,63 @@ html,body {
     height: 100%;
     object-fit:cover;
     position:absolute;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+.bg-gradient-secondary {
+	background-image: linear-gradient(to right, rgba(map-get($theme-colors, 'secondary'), 0), rgba(map-get($theme-colors, 'secondary'), 1));
+}
+
+.bg-gradient-primary {
+	background-image: linear-gradient(to left, rgba(map-get($theme-colors, 'primary'), 0), rgba(map-get($theme-colors, 'primary'), 1));
+}
+
+.decorated {
+  z-index: 10;
+  position:relative;
+}
+
+.decorated::after {
+  content: " ";
+  display:block;
+  position:absolute;
+  right:-15px;
+  width: 30px;
+  height:30px;
+  transform:rotate(45deg);
+  z-index: 1;
+  background: map-get($theme-colors, 'secondary');
+  }
+}
+
+@include media-breakpoint-down(md) {
+
+.bg-gradient-secondary {
+	background: map-get($theme-colors, 'secondary');
+}
+
+.bg-gradient-primary {
+	background: map-get($theme-colors, 'primary');
+}
+
+.decorated {
+  z-index: 10;
+  position:relative;
+}
+
+.decorated::after {
+  content: " ";
+  display:block;
+  position:absolute;
+  bottom:-10px;
+  width: 30px;
+  height:30px;
+  transform:rotate(45deg);
+  left: calc(50% - 10px);
+  z-index: 1;
+  background: map-get($theme-colors, 'secondary');
+  
   }
 }
