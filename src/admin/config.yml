@@ -3,6 +3,27 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 collections:
+  - name: 'Blog EN' # Used in routes, e.g., /admin/collections/blog
+    label: 'Blog' # Used in the UI
+    file: 'data/blog_en.json'
+    fields:
+      - label: Posts
+        name: posts
+        widget: list
+        fields:
+          - { label: Date, name: date, widget: date }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Slug,
+              name: slug,
+              widget: string,
+              pattern: ['^\S*$', 'Must not contains spaces'],
+            }
+          - { label: Thumbnail, name: thumbnail, widget: image }
+          - { label: Body, name: body, widget: markdown }
+
+          
+
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog' # Used in the UI
     files:
