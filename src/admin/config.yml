@@ -9,7 +9,7 @@ collections:
     format: "json"
     extension: "json"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{title}}"
+    slug: "{{title}}"
     fields:
       - { label: Date, name: date, widget: date }
       - { label: Title, name: title, widget: string }     
