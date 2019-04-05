@@ -28,8 +28,7 @@ collections:
     format: "json"
     extension: "json"
     fields:
-    - label: Messages
-      - { name: Message EN, widget: string }
+      - { label: Message EN, name: message_en, widget: string }
       - { name: link, widget: string }
 
 
