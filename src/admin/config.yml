@@ -6,28 +6,37 @@ collections:
   - name: 'blog-en' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog EN' # Used in the UI
     folder: 'data/posts_en/'
-    format: "json"
-    extension: "json"
+    format: 'json'
+    extension: 'json'
     create: true
-    slug: "{{title}}"
+    slug: '{{title}}'
     fields:
       - { label: Date, name: date, widget: date }
-      - { label: Title, name: title, widget: string }     
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Slug,
+          name: slug,
+          widget: string,
+          pattern:
+            [
+              '^[a-z0-9]+(?:-[a-z0-9]+)*$',
+              'Only lowercase characters, numbers and `-` are allowed. Moreover `-` must not be the first character.',
+            ],
+        }
       - { label: Thumbnail, name: thumbnail, widget: image }
       - { label: Body, name: body, widget: markdown }
 
   - name: 'banner' # Used in routes, e.g., /admin/collections/blog
     label: 'Banner' # Used in the UI
     files:
-      - name : 'banner-en'
-        label : EN
+      - name: 'banner-en'
+        label: EN
         file: 'data/banner_en.json'
-        format: "json"
-        extension: "json"
+        format: 'json'
+        extension: 'json'
         fields:
           - { label: Message, name: message_en, widget: string }
           - { name: link, widget: string }
-
 
 media_folder: 'src/images/uploads'
 

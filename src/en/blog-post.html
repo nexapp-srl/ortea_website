@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html ht-repeat="post in data.posts_en" ht-slug="en/post-{{ post.slug }}.html">
+<html ht-repeat="post in data.posts_en" ht-slug="en/blog/{{ post.slug }}.html">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="theme.css">
-  <link rel="icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="/theme.css">
+  <link rel="icon" href="/assets/favicon.png">
   <title>Sparkles</title>
-  <link rel="stylesheet" href="../theme.css">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md fixed-top shadow bg-white navbar-light d-none d-lg-block">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="../assets/logo_ortea_next_color.png" class="img-fluid" style="height:30px;">
+        <img src="/assets/logo_ortea_next_color.png" class="img-fluid" style="height:30px;">
       </a>
       <div>
         <ul class="navbar-nav align-items-center">
-          <li class="nav-item"> <a class="nav-link" href="https://www.ortea.it/en/"><img src="../assets/logo_ortea_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="https://www.icar.com/en/"><img src="../assets/logo_icar_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="https://www.enersolve.it/en/"><img src="../assets/logo_enersolve_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://www.ortea.it/en/"><img src="/assets/logo_ortea_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://www.icar.com/en/"><img src="/assets/logo_icar_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://www.enersolve.it/en/"><img src="/assets/logo_enersolve_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
           <li class="nav-item dropdown ml-3">
             <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-lg"></i></a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item d-flex align-items-center" href="blog.html">Blog</a>
+              <a class="dropdown-item d-flex align-items-center" href="../blog.html">Blog</a>
               <a class="dropdown-item d-flex align-items-center" href="https://www.ortea.it/en/contacts/" target="_blank">Contacts</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item d-flex align-items-center" href="https://www.linkedin.com/company/ortea/" target="_blank"><i class="fa fa-linkedin text-muted mr-1"></i> LinkedIn</a>
@@ -46,16 +45,16 @@
   <nav class="navbar navbar-expand-lg fixed-top shadow bg-white navbar-light d-block d-lg-none" style="padding-right: 40px;">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="../assets/logo_ortea_next_color.png" class="img-fluid" style="height:30px;">
+        <img src="/assets/logo_ortea_next_color.png" class="img-fluid" style="height:30px;">
       </a>
       <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbarmobile" aria-expanded="true" style="">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-collapse collapse" id="navbarmobile" style="">
         <ul class="navbar-nav ml-auto mt-4 align-items-center">
-          <li class="nav-item"> <a class="nav-link" href="https://www.ortea.it/en/"><img src="../assets/logo_ortea_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="https://www.icar.com/en/"><img src="../assets/logo_icar_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
-          <li class="nav-item mb-2"> <a class="nav-link" href="https://www.enersolve.it/en/"><img src="../assets/logo_enersolve_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://www.ortea.it/en/"><img src="/assets/logo_ortea_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://www.icar.com/en/"><img src="/assets/logo_icar_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
+          <li class="nav-item mb-2"> <a class="nav-link" href="https://www.enersolve.it/en/"><img src="/assets/logo_enersolve_color.png" class="img-fluid mx-2" style="height:25px;"></a> </li>
           <li class="nav-item"> <a class="nav-link" href="blog.html">Blog</a> </li>
           <li class="nav-item mb-2"> <a class="nav-link" href="https://www.ortea.it/en/contacts/" target="_blank">Contact us</a> </li>
           <li class="nav-item"> <a class="nav-link" href="https://www.linkedin.com/company/ortea/" target="_blank"><i class="fa fa-linkedin text-muted mr-1"></i> LinkedIn </a></li>
@@ -129,12 +128,12 @@
   <div class="py-3 bg-secondary">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 p-3 col-md-6"> <a href="index.html"><img src="../assets/logo_ortea_next_bianco.png" class="img-fluid" style="height:40px;"></a></div>
+        <div class="col-lg-4 p-3 col-md-6"> <a href="index.html"><img src="/assets/logo_ortea_next_bianco.png" class="img-fluid" style="height:40px;"></a></div>
         <div class="p-3 col-md-6 col-lg-4">
           <ul class="list-unstyled">
-            <li class="mb-3"><a href="https://www.ortea.it/en/"><img src="../assets/logo_ortea_bianco.png" class="img-fluid" style="height:30px;"></a></li>
-            <li class="mb-3"><a href="https://www.icar.com/en/"><img src="../assets/logo_icar_bianco.png" class="img-fluid" style="height:30px;"></a></li>
-            <li><a href="https://www.enersolve.it/en/"><img src="../assets/logo_enersolve_bianco.png" class="img-fluid" style="height:30px;"></a></li>
+            <li class="mb-3"><a href="https://www.ortea.it/en/"><img src="/assets/logo_ortea_bianco.png" class="img-fluid" style="height:30px;"></a></li>
+            <li class="mb-3"><a href="https://www.icar.com/en/"><img src="/assets/logo_icar_bianco.png" class="img-fluid" style="height:30px;"></a></li>
+            <li><a href="https://www.enersolve.it/en/"><img src="/assets/logo_enersolve_bianco.png" class="img-fluid" style="height:30px;"></a></li>
           </ul>
         </div>
         <div class="p-3 col-lg-4 col-md-12">
