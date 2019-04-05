@@ -29,8 +29,8 @@ collections:
     extension: "json"
     fields:
     - label: Messages
-        - { name: Message EN, widget: string }
-        - { name: link, widget: string }
+      - { name: Message EN, widget: string }
+      - { name: link, widget: string }
 
 
 media_folder: 'src/images/uploads'
