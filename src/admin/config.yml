@@ -24,12 +24,14 @@ collections:
 
   - name: 'banner' # Used in routes, e.g., /admin/collections/blog
     label: 'Banner' # Used in the UI
-    files: 'data/banner.json'
-    format: "json"
-    extension: "json"
-    fields:
-      - { label: Message EN, name: message_en, widget: string }
-      - { name: link, widget: string }
+    files:
+      - label : EN
+        file: 'data/banner_en.json'
+        format: "json"
+        extension: "json"
+        fields:
+          - { label: Message EN, name: message_en, widget: string }
+          - { name: link, widget: string }
 
 
 media_folder: 'src/images/uploads'
