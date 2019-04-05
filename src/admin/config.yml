@@ -22,49 +22,16 @@ collections:
       - { label: Thumbnail, name: thumbnail, widget: image }
       - { label: Body, name: body, widget: markdown }
 
-  - name: 'banner'
-    label: 'Banner'
-    files:
-      - label: 'Italian messages'
-        name: 'it'
-        file: 'data/banner_it.json'
-        fields:
-          - label: Messages
-            name: messages
-            widget: list
-            fields:
-              - { name: title, widget: string }
-              - { name: link, widget: string }
-      - label: 'English messages'
-        name: 'en'
-        file: 'data/banner_en.json'
-        fields:
-          - label: Messages
-            name: messages
-            widget: list
-            fields:
-              - { name: title, widget: string }
-              - { name: link, widget: string }
-      - label: 'French messages'
-        name: 'fr'
-        file: 'data/banner_fr.json'
-        fields:
-          - label: Messages
-            name: messages
-            widget: list
-            fields:
-              - { name: title, widget: string }
-              - { name: link, widget: string }
-      - label: 'Spanish messages'
-        name: 'es'
-        file: 'data/banner_es.json'
-        fields:
-          - label: Messages
-            name: messages
-            widget: list
-            fields:
-              - { name: title, widget: string }
-              - { name: link, widget: string }
+  - name: 'banner' # Used in routes, e.g., /admin/collections/blog
+    label: 'Banner' # Used in the UI
+    file: 'data/banner.json'
+    format: "json"
+    extension: "json"
+    fields:
+    - label: Messages
+        - { name: Message EN, widget: string }
+        - { name: link, widget: string }
+
 
 media_folder: 'src/images/uploads'
 
