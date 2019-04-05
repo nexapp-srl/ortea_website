@@ -25,7 +25,8 @@ collections:
   - name: 'banner' # Used in routes, e.g., /admin/collections/blog
     label: 'Banner' # Used in the UI
     files:
-      - label : EN
+      - name : 'banner-en'
+        label : EN
         file: 'data/banner_en.json'
         format: "json"
         extension: "json"
