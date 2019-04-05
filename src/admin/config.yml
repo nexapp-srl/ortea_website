@@ -9,16 +9,10 @@ collections:
     format: "json"
     extension: "json"
     create: true
-    identifier_field: name
+    slug: "{{year}}-{{month}}-{{day}}_{{title}}"
     fields:
       - { label: Date, name: date, widget: date }
-      - { label: Title, name: title, widget: string }
-      - {
-          label: Slug,
-          name: slug,
-          widget: string,
-          pattern: ['^\S*$', 'Must not contains spaces'],
-        }
+      - { label: Title, name: title, widget: string }     
       - { label: Thumbnail, name: thumbnail, widget: image }
       - { label: Body, name: body, widget: markdown }
 
