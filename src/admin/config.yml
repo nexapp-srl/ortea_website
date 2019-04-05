@@ -5,8 +5,9 @@ backend:
 collections:
   - name: 'blog-en' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog EN' # Used in the UI
-    folder: 'data/posts/en/'
-    format: json
+    folder: 'data/posts_en/'
+    format: "json"
+    extension: "json"
     create: true
     identifier_field: name
     fields:
