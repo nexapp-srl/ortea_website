@@ -31,7 +31,7 @@ collections:
         format: "json"
         extension: "json"
         fields:
-          - { label: Message EN, name: message_en, widget: string }
+          - { label: Message, name: message_en, widget: string }
           - { name: link, widget: string }
 
 
