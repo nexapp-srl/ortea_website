@@ -132,3 +132,17 @@ html,body {
   
   }
 }
+
+.max-lines {
+  display: block; /* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 9em; /* 5 lines */
+  line-height: 1.8em;
+}
+
+.img-blog {
+  height: 180px; 
+  width: 100%;
+}
