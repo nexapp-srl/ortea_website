@@ -10,11 +10,13 @@ Url: [https://gracious-engelbart-660170.netlify.com](https://gracious-engelbart-
 [https://github.com/allenhwkim/angular-template](https://github.com/allenhwkim/angular-template)
 
 ### Local developmen
-#### Install pi-gen
+#### Install pi-gen globally
 ```shell
-yarn global add pi-gen@1.0.24
+yarn global add pi-gen@1.0.25
 ```
 #### Run
 ```shell
 pi-gen serve
+# or if you don't want to install pi-gen globally
+./node_modules/pi-gen/bin/run serve
 ```
