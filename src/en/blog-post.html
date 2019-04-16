@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ht-repeat="post in data.posts_en" ht-slug="en/blog-{{ post.slug }}.html">
+<html ht-repeat="post in data.posts_en.sort(function(a, b) {return b.date.localeCompare(a.date);})" ht-slug="en/blog-{{ post.slug }}.html">
 
 <head>
   <meta charset="utf-8">
@@ -77,9 +77,9 @@
                   <p class="text-muted" ng-if="post.date">{{ post.date | date }}</p>
                   <h1 class="mb-3 text-uppercase text-secondary">{{ post.title }}</h1>
                   <span class="badge badge-pill badge-light mr-2" ht-repeat="tag in post.tags">{{ tag }}</span>
-                  <p class="mt-5 text-justify">
-                    {{ post.body }}
-                  </p>
+                  <div class="mt-5 text-justify">
+                    {{ post.body | markdown }}
+                  </div>
                   <div class="mt-5">
                     <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="display: flex; justify-content: center; line-height: 32px;">
                       <a class="a2a_button_facebook" target="_blank" href="/#facebook" rel="nofollow noopener"><span class="a2a_svg a2a_s__default a2a_s_facebook" style="background-color: rgb(59, 89, 152);"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
