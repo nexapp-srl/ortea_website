@@ -176,3 +176,13 @@ body {
   text-decoration: none !important;
   color: inherit !important;
 }
+
+$max-blog-post-container-width: 900px;
+
+.blog-post-container {
+  max-width: $max-blog-post-container-width;
+}
+
+.blog-post-container img {
+  max-width: $max-blog-post-container-width;
+}
