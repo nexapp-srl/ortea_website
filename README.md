@@ -5,7 +5,7 @@
 Url: 
 - [https://next.ortea.com/](https://next.ortea.com/)
 - [https://www.next.ortea.com/](https://www.next.ortea.com/)
-- [https://gracious-engelbart-660170.netlify.com](https://gracious-engelbart-660170.netlify.com)
+- [https://cranky-noyce-482b5f.netlify.com](https://cranky-noyce-482b5f.netlify.com)
 
 ### Documentation
 
