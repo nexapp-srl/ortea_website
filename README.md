@@ -1,6 +1,6 @@
 # Ortea website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/edb7ac75-5130-43b9-bdbb-dd4a949334a8/deploy-status)](https://app.netlify.com/sites/gracious-engelbart-660170/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/591ddac9-95b0-44c0-9295-4cdaf863429e/deploy-status)](https://app.netlify.com/sites/cranky-noyce-482b5f/deploys)
 
 Url: 
 - [https://next.ortea.com/](https://next.ortea.com/)
