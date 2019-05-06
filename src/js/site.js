@@ -24,5 +24,5 @@ $('#contact-form').submit(function(e) {
     $form.serialize()
   ).then();
   $form.addClass('d-none');
-  $('success-contact-form').removeClass('d-none');
+  $('#success-contact-form').removeClass('d-none');
 });
