@@ -2,29 +2,36 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+blog: &blog
+  format: 'json'
+  extension: 'json'
+  create: true
+  slug: '{{slug}}'
+  fields:
+    - { label: Date, name: date, widget: date }
+    - { label: Title, name: title, widget: string }
+    - {
+        label: Slug,
+        name: slug,
+        widget: string,
+        pattern:
+          [
+            '^[a-z0-9]+(?:-[a-z0-9]+)*$',
+            'Only lowercase characters, numbers and `-` are allowed. Moreover `-` must not be the first or the last character',
+          ],
+      }
+    - { label: Thumbnail, name: thumbnail, widget: image }
+    - { label: Body, name: body, widget: markdown }
+
 collections:
   - name: 'blog-en' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog EN' # Used in the UI
     folder: 'data/posts_en/'
-    format: 'json'
-    extension: 'json'
-    create: true
-    slug: '{{title}}'
-    fields:
-      - { label: Date, name: date, widget: date }
-      - { label: Title, name: title, widget: string }
-      - {
-          label: Slug,
-          name: slug,
-          widget: string,
-          pattern:
-            [
-              '^[a-z0-9]+(?:-[a-z0-9]+)*$',
-              'Only lowercase characters, numbers and `-` are allowed. Moreover `-` must not be the first or the last character',
-            ],
-        }
-      - { label: Thumbnail, name: thumbnail, widget: image }
-      - { label: Body, name: body, widget: markdown }
+    <<: *blog
+  - name: 'blog-it' # Used in routes, e.g., /admin/collections/blog
+    label: 'Blog IT' # Used in the UI
+    folder: 'data/posts_it/'
+    <<: *blog
 
   - name: 'banner' # Used in routes, e.g., /admin/collections/blog
     label: 'Banner' # Used in the UI
