@@ -49,4 +49,4 @@ media_folder: 'src/images/uploads'
 
 public_folder: 'images/uploads'
 
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
