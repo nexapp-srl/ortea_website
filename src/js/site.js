@@ -9,10 +9,9 @@ $(".modal form").submit(function(e) {
   e.preventDefault();
 
   var $form = $(this);
-  $.post($form.attr("action"), $form.serialize()).then(function() {
+  $.post("https://www.example.com/", $form.serialize()).then(function() {
     $(".modal .modal-body:nth-child(1)").hide()
     $(".modal .modal-body:nth-child(2)").show()
-
   });
 });
 
