@@ -1,17 +1,21 @@
-$(".modal .modal-body:nth-child(2)").hide()
-$("#success").hide()
+$('.modal .modal-body:nth-child(2)').hide();
+$('#success').hide();
 
-$("[download]").on("click", function() {
-	$(".modal").modal('hide')
-})
+$('[download]').on('click', function() {
+  $('.modal').modal('hide');
+});
 
-$(".modal form").submit(function(e) {
+function showModalSuccess() {
+  $('.modal .modal-body:nth-child(1)').hide();
+  $('.modal .modal-body:nth-child(2)').show();
+}
+
+$('.modal form').submit(function(e) {
   e.preventDefault();
 
   var $form = $(this);
-  $.post("https://www.example.com/", $form.serialize()).then(function() {
-    $(".modal .modal-body:nth-child(1)").hide()
-    $(".modal .modal-body:nth-child(2)").show()
-  });
-});
 
+  $.post('https://forms.hubspot.com/uploads/form/v2/', $form.serialize())
+    .then(showModalSuccess)
+    .catch(showModalSuccess);
+});
