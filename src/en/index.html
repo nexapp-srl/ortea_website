@@ -1,7 +1,43 @@
-<!DOCTYPE html>
-<html>
+<html><head><style type="text/css">
 
-<head>
+
+                              .p_insertion:before {
+                                content:'click here to add';
+                                color: white;
+                              }
+
+                              .p_insertion {
+                                min-height:80px !important;
+                                height:80px !important;
+                                border-style: none;
+                                background-color: white !important;
+                                color: white;
+                                text-align: center;
+                                pointer-events: none;
+                              }
+
+                              .editable:focus {
+                                outline: none !important;
+                              }
+
+                              .editable:hover {
+                                cursor: pointer;
+                              }
+
+                              .structure > * * {
+                                pointer-events: none !important;
+                              }
+
+                              .h-100 {
+                                max-height:80%;
+                              }
+
+                              div:empty, p:empty {
+                                min-width: 100%;
+                                min-height: 40px;
+                                background: #aaa;
+                              }
+                          </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -181,7 +217,7 @@
     <div class="container">
       <div class="row" ht-repeat="banner in data.banners_en">
         <div class="p-3 d-md-flex align-items-center col-md-12 justify-content-around bg-secondary text-white">
-          <p class="lead my-2">{{ banner.message }}</p><a class="btn btn-primary btn-lg editable" href="{{ banner.link }}">Vedi</a>
+          <p class="lead my-2">{{ banner.message }}</p><a class="btn btn-primary btn-lg editable" href="{{ banner.link }}">Learn more​</a>
         </div>
       </div>
     </div>
@@ -247,7 +283,7 @@
             <a href="blog.html" class="simple-link">
               <p class="lead text-primary">Read our blog post to get update from Ortea Network</p>
             </a>
-          </a>          
+                    
         </div>
       </div>
       <div class="row">
@@ -271,7 +307,7 @@
           <h4 id="success-contact-form" class="d-none">Thank you for reaching out</h4>
           <form name="contact" id="contact-form" netlify-honeypot="bot-field" data-netlify="true">
             <p style="display: none;">
-              <label>Don’t fill this out if you're human: <input name="bot-field" value="John Snow" /></label>
+              <label>Don’t fill this out if you're human: <input name="bot-field" value="John Snow"></label>
             </p>
             <div class="form-row">
               <div class="form-group col-md-6"> <input type="text" class="form-control" id="form27" placeholder="Name"> </div>
@@ -336,7 +372,7 @@
           <h3>Fill the form<br></h3>      
           <form name="download" class="text-center" netlify-honeypot="bot-field" data-netlify="true">
             <p style="display: none;">
-              <label>Don’t fill this out if you're human: <input name="bot-field" value="John Snow" /></label>
+              <label>Don’t fill this out if you're human: <input name="bot-field" value="John Snow"></label>
             </p>       
             <div class="form-group"> 
               <input type="email" class="form-control" placeholder="E-mail" required="required" name="Email"> 
@@ -605,7 +641,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="../js/site.js"></script>
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/1867527.js"></script>
-</body>
+  <script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js.hs-scripts.com/1867527.js"></script>
 
-</html>
+
+</body></html>
