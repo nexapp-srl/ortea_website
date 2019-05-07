@@ -42,6 +42,15 @@ collections:
     label: 'Blog IT'
     folder: 'data/posts_it/'
     <<: *blog
+  - name: 'blog-es'
+    label: 'Blog ES'
+    folder: 'data/posts_es/'
+    <<: *blog
+  - name: 'blog-fr'
+    label: 'Blog FR'
+    folder: 'data/posts_fr/'
+    <<: *blog
+
   - name: 'banner-en'
     label: 'Banner EN'
     folder: 'data/banners_en/'
@@ -49,6 +58,14 @@ collections:
   - name: 'banner-it'
     label: 'Banner IT'
     folder: 'data/banners_it/'
+    <<: *banner
+  - name: 'banner-es'
+    label: 'Banner ES'
+    folder: 'data/banners_es/'
+    <<: *banner
+  - name: 'banner-fr'
+    label: 'Banner FR'
+    folder: 'data/banners_fr/'
     <<: *banner
 
 media_folder: 'src/images/uploads'
