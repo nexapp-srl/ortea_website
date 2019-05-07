@@ -221,7 +221,7 @@
         <div class="row">
           <div
             class="p-4 col-lg-4 col-md-12"
-            ht-repeat="post in data.posts_es.sort(function(a, b) {return b.date.localeCompare(a.date);})"
+            ht-repeat="post in (data.posts_es ? data.posts_es : []).sort(function(a, b) {return b.date.localeCompare(a.date);})"
           >
             <a href="blog-{{ post.slug }}.html" class="simple-link">
               <img

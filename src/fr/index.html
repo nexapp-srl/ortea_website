@@ -317,7 +317,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="p-4 col-lg-4 col-md-12" ht-repeat="post in data.posts_fr.sort(function(a, b) {return b.date.localeCompare(a.date);}).slice(0, 3)">
+          <div class="p-4 col-lg-4 col-md-12" ht-repeat="post in (data.posts_fr ? data.posts_fr : []).sort(function(a, b) {return b.date.localeCompare(a.date);}).slice(0, 3)">
             <a href="blog-{{ post.slug }}.html" class="simple-link">
               <img class="img-fluid d-block img-blog" src="{{ post.thumbnail }}">
               <h4 class="mt-3 text-uppercase text-secondary">
