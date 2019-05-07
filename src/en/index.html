@@ -1,5 +1,43 @@
-<html>
-<head>
+<html><head><style type="text/css">
+
+
+                              .p_insertion:before {
+                                content:'click here to add';
+                                color: white;
+                              }
+
+                              .p_insertion {
+                                min-height:80px !important;
+                                height:80px !important;
+                                border-style: none;
+                                background-color: white !important;
+                                color: white;
+                                text-align: center;
+                                pointer-events: none;
+                              }
+
+                              .editable:focus {
+                                outline: none !important;
+                              }
+
+                              .editable:hover {
+                                cursor: pointer;
+                              }
+
+                              .structure > * * {
+                                pointer-events: none !important;
+                              }
+
+                              .h-100 {
+                                max-height:80%;
+                              }
+
+                              div:empty, p:empty {
+                                min-width: 100%;
+                                min-height: 40px;
+                                background: #aaa;
+                              }
+                          </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -272,8 +310,8 @@
               <label>Don’t fill this out if you're human: <input name="bot-field" value="John Snow"></label>
             </p>
             <div class="form-row">
-              <div class="form-group col-md-6"> <input type="text" class="form-control" id="form27" placeholder="Name" required> </div>
-              <div class="form-group col-md-6"> <input type="email" class="form-control" id="form28" placeholder="Email" required> </div>
+              <div class="form-group col-md-6"> <input type="text" class="form-control" id="form27" placeholder="Name" required=""> </div>
+              <div class="form-group col-md-6"> <input type="email" class="form-control" id="form28" placeholder="Email" required=""> </div>
             </div>
             <div class="form-group"> <input type="text" class="form-control" id="form29" placeholder="Subject"> </div>
             <div class="form-group"> <textarea class="form-control" id="form30" rows="3" placeholder="Your message"></textarea> </div> <button type="submit" class="btn btn-primary btn-block editable"><b>SEND</b></button>
