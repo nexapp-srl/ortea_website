@@ -1,5 +1,43 @@
-<html>
-  <head>
+<html><head><style type="text/css">
+
+
+                              .p_insertion:before {
+                                content:'click here to add';
+                                color: white;
+                              }
+
+                              .p_insertion {
+                                min-height:80px !important;
+                                height:80px !important;
+                                border-style: none;
+                                background-color: white !important;
+                                color: white;
+                                text-align: center;
+                                pointer-events: none;
+                              }
+
+                              .editable:focus {
+                                outline: none !important;
+                              }
+
+                              .editable:hover {
+                                cursor: pointer;
+                              }
+
+                              .structure > * * {
+                                pointer-events: none !important;
+                              }
+
+                              .h-100 {
+                                max-height:80%;
+                              }
+
+                              div:empty, p:empty {
+                                min-width: 100%;
+                                min-height: 40px;
+                                background: #aaa;
+                              }
+                          </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -97,11 +135,11 @@
         <div class="container">
           <div class="row">
             <div class="bg-gradient-secondary text-right d-flex col-lg-6 flex-column align-items-start align-items-lg-end justify-content-center mb-lg-3 py-2 px-3 decorated">
-              <h1 class="mb-2 mt-2 bigger-title"><b>POWER QUALITY</b><br></h1>
+              <h1 class="mb-2 mt-2 bigger-title"><b>QUALITÉ DE L'ÉNERGIE</b></h1>
             </div>
             <div class="bg-gradient-primary d-flex flex-column justify-content-center mb-3 px-3 py-2 col-lg-6">
               <h1 class="pl-lg-2 mb-2 mt-2 text-left bigger-title">
-                <b>UN FATTORE CRITICO</b><br>
+                <b>UN FACTEUR CRITIQUE</b><br>
               </h1>
             </div>
           </div>
@@ -345,10 +383,10 @@
               </p>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control editable" id="form27" placeholder="Nome" required>
+                  <input type="text" class="form-control editable" id="form27" placeholder="Nome" required="">
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="email" class="form-control editable" id="form28" placeholder="Email" required>
+                  <input type="email" class="form-control editable" id="form28" placeholder="Email" required="">
                 </div>
               </div>
               <div class="form-group">
