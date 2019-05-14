@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html
-  ht-repeat="post in (data.posts_es ? data.posts_es : []).sort(function(a, b) {return b.date.localeCompare(a.date);})"
+  ht-repeat="post in data.posts_es"
   ht-slug="es/blog-{{ post.slug }}.html"
 >
   <head>
