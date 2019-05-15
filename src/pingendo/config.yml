@@ -2,5 +2,5 @@ sources_path : "src/"
 index_path: src/en/index.html
 netlify_site_name : cranky-noyce-482b5f
 production_branch : master
-editable_selector : "p, a, h1, h2, h3, h4, h5"
+editable_selector : "p, a, h1, h2, h3, h4, h5, button"
 has_components : false
