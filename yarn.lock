@@ -4411,10 +4411,10 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
-pi-gen@1.0.27:
-  version "1.0.27"
-  resolved "https://registry.yarnpkg.com/pi-gen/-/pi-gen-1.0.27.tgz#00f6a9561229f8399c6ad63b3756e6a2297ccc36"
-  integrity sha512-/YbNNHDVPrsyj7CRSV0qWRRk4zxgGYN01lMH5yT/gghOFTTyc1GuxNlioIFYgs7gwHulUIPUyS8mQWM+Qa6PBQ==
+pi-gen@1.0.28:
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/pi-gen/-/pi-gen-1.0.28.tgz#7cbb336e191821b5394b50968952c1fea750bbea"
+  integrity sha512-b53lvs9aq9ezf6E0XHVN1URwWFr05i6pWV4uMDD5l+P2iPAJvW850yyIR1tbk+NjmeweKIO/bi5X/vmsJpo0dw==
   dependencies:
     "@oclif/command" "^1"
     "@oclif/config" "^1"
