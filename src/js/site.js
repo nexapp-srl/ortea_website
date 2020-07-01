@@ -26,3 +26,19 @@ $('#contact-form').submit(function(e) {
   $form.addClass('d-none');
   $('#success-contact-form').removeClass('d-none');
 });
+
+(function() {
+  var form = document.querySelector('form#mc-embedded-subscribe-form');
+  if (typeof form !== 'undefined') {
+    var email = form.querySelector('input[type="email"]');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      if (email.value.trim() !== '') {
+        this.submit();
+      } else {
+        email.focus();
+      }
+    });
+  }
+}());
