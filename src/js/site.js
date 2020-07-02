@@ -1,11 +1,11 @@
 $('.modal .modal-body:nth-child(2)').hide();
 $('#success').hide();
 
-$('[download]').on('click', function() {
+$('[download]').on('click', function () {
   $('.modal').modal('hide');
 });
 
-$('.modal form').submit(function(e) {
+$('.modal form').submit(function (e) {
   e.preventDefault();
   var $form = $(this);
   $.post(
@@ -16,7 +16,7 @@ $('.modal form').submit(function(e) {
   $('.modal .modal-body:nth-child(2)').show();
 });
 
-$('#contact-form').submit(function(e) {
+$('#contact-form').submit(function (e) {
   e.preventDefault();
   var $form = $(this);
   $.post(
@@ -27,7 +27,7 @@ $('#contact-form').submit(function(e) {
   $('#success-contact-form').removeClass('d-none');
 });
 
-(function() {
+(function () {
   var form = document.querySelector('form#mc-embedded-subscribe-form');
   if (typeof form !== 'undefined') {
     var email = form.querySelector('input[type="email"]');
@@ -42,3 +42,23 @@ $('#contact-form').submit(function(e) {
     });
   }
 }());
+
+
+(function ($) {
+  $("a[href*=\\#]:not([href=\\#])").click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+      var target = $(this.hash),
+        headerHeight = $(".navbar").height() + 5; // Get fixed header height
+
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - headerHeight
+        }, 500);
+        return false;
+      }
+    }
+  });
+})(jQuery);
