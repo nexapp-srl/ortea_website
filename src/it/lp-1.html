@@ -50,8 +50,7 @@
   <script>
     (function ($) {
       $("a[href*=\\#]:not([href=\\#])").click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-          || location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
           var target = $(this.hash),
             headerHeight = $(".navbar").height() + 5; // Get fixed header height
@@ -124,7 +123,7 @@
           <p><b>Compila il form e ti ricontatteremo</b>, altrimenti prosegui la lettura e scopri tutti i dettagli.</p>
         </div>
         <div class="mx-auto p-4 col-md-6" id="form-contatti">
-          <p>Please fill in the form to request free advice: you will receive our guide immediately :</p>
+          <p>Complila il form e richiedi lo studio di fattibilità gratuito:</p>
           <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
           <script>
             hbspt.forms.create({
