@@ -1,0 +1,315 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="/theme.css">
+  <link rel="icon" href="/assets/favicon.png">
+  <title>Ortea NEXT</title>
+  <style>
+    .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+    }
+
+    .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+    }
+
+    .lp-col-wrapper {
+      background-color: #fff;
+      color: #333;
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+
+    .lp-col-wrapper:hover {
+      transform: translateY(-10px);
+    }
+
+    .lp-col-wrapper h3 {
+      font-size: 1.3rem;
+      color: #184c87;
+    }
+
+    .lp-col-wrapper p {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    .soluzioni .fa:before {
+      color: #184c87;
+      transition: all 0.3s ease;
+    }
+
+    .soluzioni .col-lg-4:hover .fa:before {
+      color: #009640;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top shadow bg-white navbar-light d-none d-lg-block">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="/assets/logo_ortea_next_color.png" class="img-fluid" style="height:30px;">
+      </a>
+      <div>
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.ortea.it"><img src="/assets/logo_ortea_color.png"
+                class="img-fluid mx-2" style="height:25px;"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://icar.ortea.com/"><img src="/assets/logo_icar_color.png"
+                class="img-fluid mx-2" style="height:25px;"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.enersolve.it/"><img src="/assets/logo_enersolve_color.png"
+                class="img-fluid mx-2" style="height:25px;"></a>
+          </li>
+          <li class="nav-item dropdown ml-3">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"><i class="fa fa-bars fa-lg"></i></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item d-flex align-items-center" href="blog.html">Blog</a>
+              <a class="dropdown-item d-flex align-items-center" href="https://www.ortea.it/contacts/"
+                target="_blank">Contacts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item d-flex align-items-center" href="https://www.linkedin.com/company/ortea/"
+                target="_blank"><i class="fa fa-linkedin text-muted mr-1"></i> LinkedIn</a>
+              <a class="dropdown-item d-flex align-items-center"
+                href="https://www.youtube.com/channel/UCqwcSga4ZzG3ntf6hYRu_Nw?reload=9" target="_blank"><i
+                  class="fa fa-youtube-play text-muted mr-1"></i> Youtube</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ml-3">
+            <a class="nav-link" href="#" id="navbarDropdownLangLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">IT</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownLangLink">
+              <a class="dropdown-item d-flex align-items-center" href="/it/index.html">IT</a>
+              <a class="dropdown-item d-flex align-items-center" href="/en/index.html">EN</a>
+              <a class="dropdown-item d-flex align-items-center" href="/es/index.html">ES</a>
+              <a class="dropdown-item d-flex align-items-center" href="/fr/index.html">FR</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg fixed-top shadow bg-white navbar-light d-block d-lg-none"
+    style="padding-right: 40px;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="/assets/logo_ortea_next_color.png" class="img-fluid" style="height:30px;">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+        data-target="#navbarmobile" aria-expanded="true" style="">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarmobile" style="">
+        <ul class="navbar-nav ml-auto mt-4 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.ortea.it/"><img src="/assets/logo_ortea_color.png"
+                class="img-fluid mx-2" style="height:25px;"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.icar.com/"><img src="/assets/logo_icar_color.png"
+                class="img-fluid mx-2" style="height:25px;"></a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="https://www.enersolve.it/"><img src="/assets/logo_enersolve_color.png"
+                class="img-fluid mx-2" style="height:25px;"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="https://www.ortea.it/contacts/" target="_blank">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/company/ortea/" target="_blank"><i
+                class="fa fa-linkedin text-muted mr-1"></i> LinkedIn
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCqwcSga4ZzG3ntf6hYRu_Nw?reload=9"
+              target="_blank"><i class="fa fa-youtube-play text-muted mr-1"></i> Youtube
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/it/index.html">IT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/en/index.html">EN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/es/index.html">ES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/fr/index.html">FR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center text-white align-items-center d-flex"
+    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/lp/lp-enersolve.jpg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container pb-3 pt-5">
+      <div class="row">
+        <div class="mx-auto col-lg-8 col-md-10">
+          <h1 class="mb-4">Grazie per la richiesta</h1>
+          <p class="lead">Ti ricontatteremo a breve</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto p-4 col-md-8">
+          <h2 class="mb-3">Il risparmio garantito Enersolve</h2>
+          <p><b>Grazie per aver richiesto uno studio di fattibilità</b>. Saremo felici di analizzare le tue attuali
+            performance
+            e di
+            calcolare il tuo possibile risparmio.</b>.
+          </p>
+          <p>Ecco i <b>prossimi step:</b></p>
+          <ul>
+            <li>Riceverai una <b>chiamata o una mail</b> da un nostro addetto, che ti spiegherà più nel dettaglio in
+              cosa
+              consiste lo studio e
+              quali dati sono necessari per poterlo condurre</li>
+            <li>Una volta ricevute da te le informazioni necessarie, <b>avvieremo lo studio</b>
+            </li>
+            <li>Nel giro di <b>tre giorni</b> lavorativi ti invieremo il <b>documento completo</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="py-3 bg-secondary editable">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 p-3 col-md-4">
+          <a href="index.html"><img src="/assets/logo_ortea_next_bianco.png" class="img-fluid" style="height:40px;"></a>
+          <br><br>
+          <p class="mb-2 text-white">Iscriviti alla nostra Newsletter</p>
+          <form class="mb-1 _web-next _lang-it"
+            action="https://ortea.us12.list-manage.com/subscribe/post?u=4d48b38c7e0ed044a584f537c&amp;id=e235061d1d"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+            novalidate="">
+            <div class="input-group mb-0">
+              <input type="email" class="form-control form-control-sm" placeholder="Email" id="form3" name="EMAIL"
+                required="">
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_4d48b38c7e0ed044a584f537c_e235061d1d" tabindex="-1" value="">
+              </div>
+              <div class="input-group-append">
+                <button class="btn btn-primary btn-sm text-uppercase" type="submit" name="subscribe">ISCRIVITI</button>
+              </div>
+            </div>
+          </form>
+          <p class="mb-2 text-info">
+            <small>Facendo clic su ISCRIVITI, accetti la nostra politica sulla
+              privacy</small>
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="p-3 col-md-3 ">
+          <p class="text-white">Seguici</p>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a class="text-white" href="https://www.linkedin.com/company/ortea/"><i class="fa fa-linkedin mr-1"></i>
+                LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCqwcSga4ZzG3ntf6hYRu_Nw?reload=9" class="text-white"><i
+                  class="fa fa-youtube-play mr-1"></i> Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-3 col-md-4 col-lg-4 text-md-right">
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="https://www.ortea.it/"><img src="/assets/logo_ortea_bianco.png" class="img-fluid"
+                  style="height:30px;"></a>
+            </li>
+            <li class="mb-3">
+              <a href="https://icar.ortea.com/"><img src="/assets/logo_icar_bianco.png" class="img-fluid"
+                  style="height:30px;"></a>
+            </li>
+            <li>
+              <a href="https://www.enersolve.it/"><img src="/assets/logo_enersolve_bianco.png" class="img-fluid"
+                  style="height:30px;"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0 mt-2 text-info">
+            Copyright ORTEA SpA | Via dei Chiosi, 21 | 20873 Cavenago di
+            Brianza MB ITALY | C.F. 04247100151 | P.IVA 13026720154
+          </p>
+          <p class="mb-0 mt-2 text-info"><a class="deco-none"
+              href="/assets/privacy-policy/2019-S20_privacy_policy_ORTEA_NEXT_IT.pdf">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="../js/site.js"></script>
+  <script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js.hs-scripts.com/1867527.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-11431716-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-11431716-2');
+  </script>
+  <script>
+    (function ($) {
+      $("a[href*=\\#]:not([href=\\#])").click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          || location.hostname == this.hostname) {
+
+          var target = $(this.hash),
+            headerHeight = $(".navbar").height() + 5; // Get fixed header height
+
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - headerHeight
+            }, 500);
+            return false;
+          }
+        }
+      });
+    })(jQuery);
+  </script>
+  <script type="text/javascript" id="cookiebanner"
+    src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js"
+    data-moreinfo="/assets/privacy-policy/2019-S20_privacy_policy_ORTEA_NEXT_IT.pdf"
+    data-message="Utilizziamo i cookie per migliorare la tua esperienza. Continuando a visitare questo sito accetti il ​​nostro utilizzo dei cookie."
+    data-linkmsg="Approfondisci">
+    </script>
+</body>
+
+</html>
