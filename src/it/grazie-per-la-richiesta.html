@@ -283,27 +283,6 @@
 
     gtag('config', 'UA-11431716-2');
   </script>
-  <script>
-    (function ($) {
-      $("a[href*=\\#]:not([href=\\#])").click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-          || location.hostname == this.hostname) {
-
-          var target = $(this.hash),
-            headerHeight = $(".navbar").height() + 5; // Get fixed header height
-
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - headerHeight
-            }, 500);
-            return false;
-          }
-        }
-      });
-    })(jQuery);
-  </script>
   <script type="text/javascript" id="cookiebanner"
     src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js"
     data-moreinfo="/assets/privacy-policy/2019-S20_privacy_policy_ORTEA_NEXT_IT.pdf"
