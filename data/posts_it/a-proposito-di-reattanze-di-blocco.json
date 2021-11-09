@@ -1,0 +1,7 @@
+{
+  "date": "2021-11-09T08:04:21.684Z",
+  "title": "A proposito di Reattanze di blocco",
+  "slug": "np37it-reattanzediblocco",
+  "thumbnail": "/images/uploads/np37-on.jpg",
+  "body": "L’uso crescente di dispositivi elettronici di potenza sta causando un crescente livello di distorsione armonica nei sistemi elettrici, motivo per cui i fornitori di energia richiedono l’uso di reattanze di blocco armonico.\r\n\nLe reattanze di blocco, utilizzate in abbinamento a batterie di condensatori, danno vita a banchi di rifasamento e di filtraggio delle correnti armoniche.\r\n\nSolitamente questo tipo di reattori è costruito con nucleo magnetico in grado di garantire alti valori di linearità anche con forti incrementi di corrente rispetto al valore nominale.\r\n\nUn sistema di rifasamento desintonizzato svolge la funzione di correzione del fattore di potenza, impedendo qualsiasi amplificazione di correnti e tensioni armoniche causate dalla risonanza tra la capacità del condensatore e dell’induttanza del sistema elettrico.\r\n\nAccoppiando opportunamente un reattore correttamente dimensionato al condensatore di potenza, si forma un basso circuito risonante (di solito sotto la 5a armonica di corrente) che impedisce alle armoniche di ordine superiore di fluire nei condensatori e di danneggiarli.\r\n\nI reattori di blocco ORTEA sono assemblati con bobine di alluminio o rame.\r\n\nPer saperne di più sulle reattanze di blocco standard offerte da Ortea, [scarica il catalogo TRASFORMATORI DI POTENZA](https://www.ortea.it/download-cataloghi/)"
+}
