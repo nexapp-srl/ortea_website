@@ -1,0 +1,7 @@
+{
+  "date": "2021-11-09T08:08:37.766Z",
+  "title": "Acerca de los Reactancias de bloqueo",
+  "slug": "np37es-reattanzediblocco",
+  "thumbnail": "/images/uploads/np37-on.jpg",
+  "body": "El uso cada vez mayor de dispositivos electrónicos de potencia está provocando un nivel cada vez mayor de distorsión armónica en los sistemas eléctricos, razón por la cual los proveedores de energía solicitan el uso de reactancias de bloqueo de armónicos.\r\n\nLas reactancias de bloqueo, utilizadas en combinación con baterías de condensadores, dan vida a los bancos de compensación y de filtrado de armónicos.\r\n\nPor lo general, este tipo de reactores se construye con un núcleo magnético capaz de garantizar altos valores de linealidad, incluso con fuertes aumentos de corriente respecto al valor nominal.\r\n\nUn sistema de compensación “detuned” realiza la función de corregir el factor de potencia, evitando cualquier amplificación de corrientes y tensiones armónicas provocadas por la resonancia entre la capacidad del condensador y la inductancia del sistema eléctrico.\r\n\nAl agregar un reactor de tamaño adecuado al condensador de potencia, se forma un circuito de baja resonancia (generalmente por debajo del 5° armónico de corriente) que evita que los armónicos de orden superior fluyan en los condensadores y los dañen.\r\n\nLos reactores de bloqueo ORTEA se ensamblan con bobinas de aluminio o cobre.\r\n\nPara saber más sobre los reactancias de bloqueo estándar que ofrece Ortea, [descargue el catálogo de TRANSFORMADORES](https://www.ortea.it/es/download/)."
+}
