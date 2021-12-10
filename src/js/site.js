@@ -17,6 +17,8 @@ $('.modal form').submit(function (e) {
   formData.append('_page_url', window.location.href);
   $.ajax({
     type: 'POST',
+    processData: false,
+    contentType: false,
     url: url,
     data: formData
   });
@@ -35,6 +37,8 @@ $('#contact-form').submit(function (e) {
   formData.append('_page_url', window.location.href);
   $.ajax({
     type: 'POST',
+    processData: false,
+    contentType: false,
     url: url,
     data: formData
   });
@@ -53,6 +57,8 @@ $('#newsletter-form').submit(function (e) {
   formData.append('_page_url', window.location.href);
   $.ajax({
     type: 'POST',
+    processData: false,
+    contentType: false,
     url: url,
     data: formData
   });
