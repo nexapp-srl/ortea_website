@@ -28,7 +28,8 @@ banner: &banner
   extension: 'json'
   create: true
   slug: '{{year}}-{{month}}-{{day}}_{{message}}'
-  identifier_field: message
+  identifier_field: body
+  # identifier_field: message
   fields:
     - { label: Message, name: message, widget: string }
     - { label: Link, name: link, widget: string }
